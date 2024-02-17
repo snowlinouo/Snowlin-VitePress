@@ -5,6 +5,7 @@ export default defineConfig({
   base: "/Snowlin-VitePress/",
   title: "SnowLin",
   description: "測試網站",
+  head: [["link", { rel: "icon", href: "/imgs/logo.png" }]],
   themeConfig: {
     outlineTitle: '本頁目錄',
     outline: [2, 6],
