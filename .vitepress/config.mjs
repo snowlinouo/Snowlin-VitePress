@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/Snowlin-VitePress/",
   title: "SnowLin",
   description: "測試網站",
   themeConfig: {
