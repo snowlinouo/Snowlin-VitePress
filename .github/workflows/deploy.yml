@@ -33,22 +33,22 @@ jobs:
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
       - name: Setup pnpm
-      uses: pnpm/action-setup@v2 # 安装pnpm并添加到环境变量
-      with:
-        version: 8.15.3 # 指定需要的 pnpm 版本
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.15.3
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm # 设置缓存
+          cache: pnpm
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: pnpm install
       - name: Build with VitePress
         run: |
-          pnpm run docs:build # 启动项目
-          touch .nojekyll  # 通知githubpages不要使用Jekyll处理这个站点，不知道为啥不生效，就手动搞了
+          pnpm docs:build
+          touch docs/.vitepress/dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
