@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "SnowLin 網站"
-  text: "測試網站"
-  tagline: 一個測試用的網站
+  name: "雪鈴網站"
+  text: "一個溫暖的地方"
+  tagline: 溫暖且有地舖的窩
   image:
     src: /imgs/logo.png
     alt: 雪鈴

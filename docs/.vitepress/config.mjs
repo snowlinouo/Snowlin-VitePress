@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // base: "/Snowlin-VitePress/",
-  title: "SnowLin",
-  description: "測試網站",
+  title: "雪鈴的窩",
+  description: "一個溫暖的地方",
   head: [["link", { rel: "icon", href: "/imgs/logo.png" }]],
   themeConfig: {
     outlineTitle: '本頁目錄',
@@ -48,6 +48,7 @@ export default defineConfig({
             footer: {
               selectText: '選擇',
               navigateText: '切換',
+              closeText: '關閉',
             },
           },
         },
